@@ -4,6 +4,7 @@ body{
     font-family: 'Merriweather', serif;
     font-size: 1.2rem;
     
+    
 }
 /*************************************** H tags CSS **********************************************************/
 h1{
@@ -52,7 +53,7 @@ p.top-p{
 }
 /************************************* DIV CSS **************************************************************/
 div.top-container{
-    background-color: #ECF2FF;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
     padding-top: 100px;
     position: relative;
     overflow: hidden;
@@ -110,7 +111,7 @@ a:hover{
 }
 .bottom-cloud{
     position: absolute;
-    right: 100vw - 20px;
+    right: 100vw;
     bottom : 300px;
     animation: bcloudAnimation 15s linear infinite;
 }
