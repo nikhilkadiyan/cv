@@ -55,6 +55,7 @@ div.top-container{
     background-color: #ECF2FF;
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
     
 }
 div.profile{
@@ -85,9 +86,20 @@ a:hover{
 /************************************** IMG CSS *************************************************************/
 .top-cloud{
     position: absolute;
-    top : 30px;
-    right : 300px;
+    top : 50px;
+    left : 0;
+    animation: cloudAnimation 20s linear infinite;
 }
+  
+  @keyframes cloudAnimation {
+    0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(100vw));
+      }
+    }
+
 .laptop{
     height: 15%;
     width: 10%;
@@ -98,9 +110,20 @@ a:hover{
 }
 .bottom-cloud{
     position: absolute;
-    left : 300px;
+    right: 100vw - 20px;
     bottom : 300px;
+    animation: bcloudAnimation 15s linear infinite;
 }
+  
+  @keyframes bcloudAnimation {
+    0% {
+        transform: translateX(100vw);
+      }
+      100% {
+        transform: translateX(calc(0));
+      }
+    }
+  
 img.profile-ph{
     height: 15%;
     width: 15%;
